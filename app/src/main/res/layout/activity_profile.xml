@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".User.Profile.Profile"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize">
+
+            <ImageView
+                android:id="@+id/back_btn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_baseline_keyboard_arrow_left_24"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hồ Sơ"
+                android:fontFamily="@font/muli_black"
+                android:textSize="30sp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="50dp">
+
+            <RelativeLayout
+                android:id="@+id/Layout_image_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="9dp"
+                android:layout_centerHorizontal="true">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_Image_profile"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:cardCornerRadius="100dp">
+
+                <ImageView
+                    android:id="@+id/Image_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/image_test"
+                    android:background="@color/white"
+                    android:scaleType="centerCrop"/>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/text_name_Profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="QuafBanhMi"
+                android:fontFamily="@font/muli_black"
+                android:textSize="30sp"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/text_email_Profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_name_Profile"
+                android:layout_centerInParent="true"
+                android:text="quafbanhmi@gmail.com"
+                android:textSize="18sp" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_button_Edit_profile"
+                android:layout_width="200dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/text_email_Profile"
+                android:layout_centerHorizontal="true"
+                app:cardBackgroundColor="@color/mainColor"
+                app:cardCornerRadius="50dp">
+
+                <Button
+                    android:id="@+id/btn_Edit_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:text="Chỉnh Sửa"
+                    android:fontFamily="@font/muli_black"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:background="#00000000"/>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_Setting_profile"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:cardCornerRadius="100dp"
+                    android:layout_centerVertical="true">
+
+                    <ImageView
+                        android:id="@+id/Setting_profile"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/setting"
+                        android:background="@color/white"
+                        android:scaleType="centerCrop"
+                        android:layout_gravity="center"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cài Đặt"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/muli_black"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toEndOf="@id/card_Setting_profile"/>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_icon_Setting_profile"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:cardCornerRadius="100dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
+                        android:layout_gravity="center"/>
+
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="15dp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_Password_profile"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:cardCornerRadius="100dp"
+                    android:layout_centerVertical="true">
+
+                    <ImageView
+                        android:id="@+id/Password_profile"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/key"
+                        android:background="@color/white"
+                        android:scaleType="centerCrop"
+                        android:layout_gravity="center" />
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Đổi Mật Khẩu"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/muli_black"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toEndOf="@id/card_Password_profile"/>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_icon_Password_profile"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:cardCornerRadius="100dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
+                        android:layout_gravity="center"/>
+
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="15dp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_info_user_profile"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:cardCornerRadius="100dp"
+                    android:layout_centerVertical="true">
+
+                    <ImageView
+                        android:id="@+id/Info_User_profile"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/account_info"
+                        android:background="@color/white"
+                        android:scaleType="centerCrop"
+                        android:layout_gravity="center" />
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tài Khoản"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/muli_black"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toEndOf="@id/card_info_user_profile"/>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_icon_info_user_profile"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:cardCornerRadius="100dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
+                        android:layout_gravity="center"/>
+
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/mainColor"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_Info_profile"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:cardCornerRadius="100dp"
+                    android:layout_centerVertical="true">
+
+                    <ImageView
+                        android:id="@+id/Info_profile"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/about"
+                        android:background="@color/white"
+                        android:scaleType="centerCrop"
+                        android:layout_gravity="center"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thông Tin"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/muli_black"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toEndOf="@id/card_Info_profile"/>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_icon_Info_profile"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:cardCornerRadius="100dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
+                        android:layout_gravity="center"/>
+
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/logout_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:layout_marginTop="15dp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_Logout_profile"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:cardCornerRadius="100dp"
+                    android:layout_centerVertical="true">
+
+                    <ImageView
+                        android:id="@+id/Logout_profile"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/logout_profile"
+                        android:background="@color/white"
+                        android:scaleType="centerCrop"
+                        android:layout_gravity="center"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Đăng Xuất"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/muli_black"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#FF0000"
+                    android:layout_toEndOf="@id/card_Logout_profile"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

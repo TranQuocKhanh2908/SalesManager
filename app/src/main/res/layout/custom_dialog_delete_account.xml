@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_Content_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="Nhập Mã Được Gửi Sang Email \nCủa Tài Khoản \nĐể Xác Nhận Việc Xóa Tài Khoản"
+        android:fontFamily="@font/muli_black"
+        android:textSize="16sp"
+        android:textAllCaps="true"
+        android:gravity="center"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Nhập Mã Xác Nhận"
+        app:boxStrokeWidthFocused="2dp"
+        app:endIconMode="clear_text"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="5dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/verify_code_delete"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/muli_black"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:maxLength="4"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/black"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="10dp"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginRight="20dp">
+
+        <Button
+            android:id="@+id/Cancel_dialogDelete_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hủy"/>
+
+        <Button
+            android:id="@+id/Confirm_dialogDelete_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xác Nhận"
+            android:layout_toEndOf="@+id/Cancel_dialogDelete_btn"
+            android:layout_marginLeft="10dp"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

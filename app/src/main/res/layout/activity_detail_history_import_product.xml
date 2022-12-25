@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User.MProduct.ListHistoryImportProduct.DetailHistoryImportProduct"
+    android:orientation="vertical"
+    android:layout_margin="10dp">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/detail_import_product_toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize">
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            android:layout_centerVertical="true"
+            android:padding="15dp"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chi Tiết Lịch Sử Nhập Hàng"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:padding="10dp"
+            android:textAllCaps="true"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:layout_marginTop="5dp"
+        android:background="#5E5D5D"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="40dp"
+            android:padding="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:id="@+id/lb_typeproduct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Loại Sản Phẩm :"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView
+                    android:id="@+id/detail_import_product_typeProduct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Loại sản phẩm"
+                    android:textSize="20sp"
+                    android:layout_below="@id/lb_typeproduct"
+                    android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:id="@+id/lb_nameproduct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tên Sản Phẩm :"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView
+                    android:id="@+id/detail_import_product_nameProduct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tên sản phẩm"
+                    android:textSize="20sp"
+                    android:layout_below="@id/lb_nameproduct"
+                    android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:id="@+id/lb_priceproduct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Giá Sản Phẩm (VNĐ) x 1000 :"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView
+                    android:id="@+id/detail_import_product_priceProduct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Giá Sản Phẩm"
+                    android:textSize="20sp"
+                    android:layout_below="@id/lb_priceproduct"
+                    android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:id="@+id/lb_oldqualityproduct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Số Lượng Cũ :"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView
+                    android:id="@+id/detail_import_product_oldQualityProduct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Số Lượng Cũ"
+                    android:textSize="20sp"
+                    android:layout_below="@id/lb_oldqualityproduct"
+                    android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:id="@+id/lb_newqualityproduct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Số Lượng Mới:"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView
+                    android:id="@+id/detail_import_product_newQualityProduct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Số Lượng Mới"
+                    android:textSize="20sp"
+                    android:layout_below="@id/lb_newqualityproduct"
+                    android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:id="@+id/lb_totalbill"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thành Tiền (VNĐ) x 1000 :"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView
+                    android:id="@+id/detail_import_product_TotalPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thành Tiền"
+                    android:textSize="20sp"
+                    android:layout_below="@id/lb_totalbill"
+                    android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:id="@+id/lb_CreateDay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ngày Nhập Hàng :"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView
+                    android:id="@+id/detail_import_product_CreateDay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ngày Nhập Hàng"
+                    android:textSize="20sp"
+                    android:layout_below="@id/lb_CreateDay"
+                    android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:id="@+id/lb_CreateTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thời Gian Nhập Hàng :"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView
+                    android:id="@+id/detail_import_product_CreateTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thời Gian Nhập Hàng"
+                    android:textSize="20sp"
+                    android:layout_below="@id/lb_CreateTime"
+                    android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/lb_imageproduct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hình Ảnh Sản Phẩm :"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"/>
+
+                <ImageView
+                    android:id="@+id/detail_import_product_imageProduct"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:src="@drawable/image_test"
+                    android:layout_below="@id/lb_imageproduct"
+                    android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

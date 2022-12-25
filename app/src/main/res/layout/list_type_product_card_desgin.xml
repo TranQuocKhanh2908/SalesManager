@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp">
+
+        <RelativeLayout
+            android:id="@+id/config_btn_type_product"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/bg_card_list_type_product"
+                android:alpha="0.5"
+                app:tint="#77000000" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:src="@drawable/bg_card_list_type_product" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/Rname"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp">
+
+            <TextView
+                android:id="@+id/Txv_TypeNameProduct"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Tên Loại Sản Phẩm"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:fontFamily="@font/muli_black"
+                android:textAllCaps="true"
+                android:paddingBottom="1dp"
+                android:textColor="#000" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/Rdesc"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/Rname">
+
+
+            <TextView
+                android:id="@+id/lb_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mô Tả:"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:textSize="13sp"
+                android:fontFamily="@font/muli_black"
+                android:textAllCaps="true"
+                android:paddingBottom="1dp"
+                android:textColor="#000"/>
+
+            <TextView
+                android:id="@+id/Txv_DescTypeProduct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/lb_desc"
+                android:text="Mô Tả"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:textSize="13sp"
+                android:fontFamily="@font/muli_black"
+                android:textAllCaps="true"
+                android:paddingBottom="1dp"
+                android:textColor="#000"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

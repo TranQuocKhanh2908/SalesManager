@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        app:showAsAction="always"
+        android:icon="@drawable/ic_baseline_add_24"
+        android:title="">
+        <menu>
+
+            <item
+                android:title="SẢN PHẨM">
+
+                <menu>
+                    <item
+                        android:id="@+id/add_type_product"
+                        android:title="Thêm Loại Sản Phẩm"
+                        app:showAsAction="never"/>
+
+                    <item
+                        android:id="@+id/add_product"
+                        android:title="Thêm Sản Phẩm"
+                        app:showAsAction="never"/>
+
+                    <item
+                        android:id="@+id/import_product"
+                        android:title="Nhập Hàng"
+                        app:showAsAction="never"/>
+
+                </menu>
+
+            </item>
+
+            <item
+                android:title="BÁN HÀNG">
+
+                <menu>
+                    <item
+                        android:id="@+id/create_bill"
+                        android:title="Tạo Hóa Đơn"
+                        app:showAsAction="never"/>
+
+                    <item
+                        android:id="@+id/create_promotion"
+                        android:title="Tạo Khuyến Mãi"
+                        app:showAsAction="never"/>
+                </menu>
+
+            </item>
+
+
+        </menu>
+    </item>
+
+</menu>

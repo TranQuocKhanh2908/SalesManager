@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="8dp"
+    android:layout_margin="10dp">
+
+    <RelativeLayout
+        android:id="@+id/bill_detail_dashboard_btn"
+        android:layout_width="320dp"
+        android:layout_height="150dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/bill_product_image"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:src="@drawable/ls_startupimage"
+            android:scaleType="centerInside"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/bill_product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/bill_product_image"
+            android:layout_marginBottom="13dp"
+            android:text="McDonald's"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/lb_CreateDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bill_product_name"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/bill_product_image"
+            android:text="Ngày Tạo:"
+            android:layout_marginLeft="10dp"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/bill_CreateDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bill_product_name"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/lb_CreateDay"
+            android:text="22/11/2022"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/lb_CreateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lb_CreateDay"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/bill_product_image"
+            android:text="Giờ Tạo:"
+            android:layout_marginLeft="10dp"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/bill_CreateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bill_CreateDay"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/lb_CreateTime"
+            android:text="22/11/2022"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

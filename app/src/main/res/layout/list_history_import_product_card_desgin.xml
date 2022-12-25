@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/detail_import_product"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/bg_card_list_product"
+                android:alpha="0.5"
+                app:tint="#77000000" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="2dp"
+                android:layout_marginRight="2dp"
+                android:src="@drawable/bg_card_list_product"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/img_import_product"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/image_test"
+            android:padding="15dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="120dp">
+
+            <TextView
+                android:id="@+id/Txv_nameProduct_import_product"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Tên Sản Phẩm"
+                android:textSize="17sp"
+                android:gravity="bottom"
+                android:fontFamily="@font/muli_black"
+                android:textAllCaps="true"
+                android:paddingBottom="7dp"
+                android:textColor="#000"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="2dp">
+
+                <TextView
+                    android:id="@+id/lb_importDay"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="Ngày Nhập :"
+                    android:textSize="15sp"
+                    android:gravity="bottom"
+                    android:fontFamily="@font/muli_black"
+                    android:textAllCaps="true"
+                    android:textColor="#000"
+                    />
+
+                <TextView
+                    android:id="@+id/Txv_importDay_import_product"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="Ngày Nhập"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="bottom"
+                    android:fontFamily="@font/muli_black"
+                    android:textAllCaps="true"
+                    android:textColor="#000"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="vertical"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="2dp">
+
+                    <TextView
+                        android:id="@+id/lb_oldQuality"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Số Lượng Cũ :"
+                        android:textSize="15sp"
+                        android:gravity="center_vertical"
+                        android:textColor="#A6A6A6"
+                        android:layout_marginRight="7dp"/>
+
+                    <TextView
+                        android:id="@+id/Txv_oldQuality_import_product"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="150"
+                        android:fontFamily="@font/muli_black"
+                        android:textSize="15sp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="2dp">
+
+                    <TextView
+                        android:id="@+id/lb_newQuality"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Số Lượng Mới :"
+                        android:textSize="15sp"
+                        android:gravity="center_vertical"
+                        android:textColor="#A6A6A6"
+                        android:layout_marginRight="7dp"/>
+
+                    <TextView
+                        android:id="@+id/Txv_newQuality_import_product"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="200"
+                        android:fontFamily="@font/muli_black"
+                        android:textSize="15sp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
